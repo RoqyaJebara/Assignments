@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://searchengineland.com/wp-content/seloads/2014/08/photos-images-pictures-ss-1920-800x450.jpg"
+      alt=""
+      width="200"
+    />
+    <img src="image1.jpg" alt="" width="200" />
+
+    <!-- <video src=""> no -->
+  
+    <video controls width="400" height="400" autoplay muted>
+      <source src="video1.mp4" />
+    </video>
+
+    <audio controls>
+      <!-- should -->
+      <source src="audio1.mp3" type="audio/mp3" />
+    </audio>
+
+    <iframe
+      width="600"
+      height="600"
+      src="https://file-examples.com/index.php/sample-audio-files/sample-mp3-download/"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      width="600"
+      height="600"
+      src="https://youtube.com/shorts/vl_L7S8IuyQ?si=G9YihLiIW-NS_RIE"
+      frameborder="0"
+    ></iframe>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>img</th>
+          <th>video</th>
+          <th>audio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td><img src="image1.jpg" alt="" width="200" height="200" /></td>
+        <td>
+          <video controls width="200" height="200" autoplay muted>
+            <source src="video1.mp4" />
+          </video>
+        </td>
+        <td>
+          <audio controls width="200" height="200">
+            <!-- should -->
+            <source src="audio1.mp3" type="audio/mp3" />
+          </audio>
+        </td>
+      </tbody>
+    </table>
+  </body>
+</html>
