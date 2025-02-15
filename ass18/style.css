@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+}
+.center{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    max-width: 700px;
+}
+.item{
+    height:200px;
+    width:200px;
+
+}
+img{
+    border-radius: 50%;
+ height: 100px;
+ width: 100px;
+}
+a{
+    text-decoration: none;
+}
+.intro{
+background-color: bisque;
+
+}
+.posts{
+    background-color: bisque;
+   
+
+}
+.see{
+    background-color: bisque;
+    
+
+}
+
