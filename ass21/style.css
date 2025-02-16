@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.middle{
+    display: flex;
+    overflow: auto;
+    justify-content:space-between;
+    align-items: stretch;
+    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 10px;
+
+}
+.parent1{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+   
+    
+}
+
+.child{
+    overflow: auto;
+
+}
+.child1{
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+    height: 100vh;
+    /* overflow: auto; */
+    /* scrol */
+
+  
+}
+h3{
+    display: inline-block;
+}
+.flex3{
+    flex:2;
+}
+.flex1{
+    flex: 0.5;;
+}
+img{
+    width: 30px;
+}
+.whats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.parent1 img{
+    border-radius: 50px;
+    width: 50px;
+}
+.msg{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(7, 240, 7);
+}
+.b{
+    width: 15px;
+    height: 15px;
+}
+body{
+    height: 100vh;
+    gap:  30px;
+    display: flex;
+    flex-direction: row;
+    background-color: aquamarine;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: hidden;
+}
+input{
+    background-color: rgb(142, 211, 188);
+}
+
+.imageWhats{
+    background: url("whatsapp-512.gif");
+background-repeat: no-repeat;
+background-position: 50%;
+    justify-content: center;
+    align-items: center;
+}
