@@ -9,12 +9,11 @@
   <body>
     <div class="sidebar">
       <div>
-        <label for="">ChatGPT</label>
-        <input type="text" list="gpt" />
-        <datalist name="gpt" id="gpt">
+        <label for="ChatGPT">ChatGPT</label>
+           <select name="ChatGPT" id="ChatGPT">
           <option value="ChatGPT Plus">ChatGPT Plus</option>
           <option value="ChatGPT">ChatGPT</option>
-        </datalist>
+        </select>
       </div>
       <ul class="menu">
         <li><a href="#">Explore GPTs</a></li>
@@ -26,15 +25,17 @@
     </div>
 
     <div class="flex">
-      <h1>What can I help with?</h1>
+      <div >
+        <h1>What can I help with?</h1>
 
-      <input type="text" placeholder="Message ChatGPT" class="width" />
+      <input type="text" placeholder="Message ChatGPT" class="ChatGPTwidth" />
 
-      <div>
+      <div class="flex-row">
         <button>Create Image</button>
         <button>Make a Plan</button>
         <button>Analyze Images</button>
         <button>Summarize Text</button>
+      </div>
       </div>
     </div>
   </body>
