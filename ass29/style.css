@@ -1,0 +1,43 @@
+h1{
+    color: red;
+}
+.flex{
+display: flex;
+flex-direction: row;
+gap:8px;
+flex-wrap: wrap;
+}
+.child{
+flex: 1 1 300px;
+background-color: lightskyblue;
+height: 100px;
+
+}
+/* @media(max-width: 320px) {
+    
+    .flex{
+        flex-direction: column;
+        }
+} */
+/* @media(min-width: 320px) {
+    
+    .flex{
+        flex-direction: column;
+        }
+} */
+
+/* @media (prefers-color-scheme: dark) {
+    h1{
+        color: white;
+    }
+   body{
+    background-color: black;
+   }
+    
+}
+@media (prefers-color-scheme: light) {
+    h1{
+        color: black;
+    }  
+    
+} */
