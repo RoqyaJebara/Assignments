@@ -1,0 +1,57 @@
+label { display: block; }
+h1{
+    text-align: center;
+    color: blue!important;
+}
+form div {
+    margin: 10px;
+}
+.page1,.page2,.page3{
+    height: 100vh;
+    overflow-y: scroll;
+
+}
+.page1{
+    background-image: url('add.webp');
+    background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.page2,.page3{
+    background-image: url('users.jpg');
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+ }
+/* for center form  */
+form ,table{
+    padding: 100px;
+    background-color: rgba(255, 255, 255,.7)!important;
+    /* margin: 30px; */
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+ tr, th, td{
+    background-color: transparent!important;
+
+}
+/*  inside form  */
+a{
+    text-decoration: none;
+   
+}
+
+.card{
+    background-color:rgba(255, 255, 255,.7)!important;
+float: left;
+margin:10px;
+
+}
