@@ -1,24 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 label { display: block; }
 h1{
     text-align: center;
     color: blue!important;
 }
+
 form div {
     margin: 10px;
 }
-.page1,.page2,.page3{
-    height: 100vh;
+nav{
+    height: 6vh;
+}
+button{
+    /* border-radius: 6px !important; */
+}
+.page1,#view1,#view2{
+    height:86vh;
     overflow-y: scroll;
 
 }
 .page1{
     background-image: url('add.webp');
-    background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
   background-size: cover;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top:4vh;
+  margin-bottom:4vh;
+  /* opacity: 0.9; */
+  
 }
-.page2,.page3{
+#view1,#view2{
     background-image: url('users.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top:4vh;
+    margin-bottom:4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 section{
     display: flex;
@@ -29,13 +60,13 @@ section{
  }
 /* for center form  */
 form ,table{
-    padding: 100px;
+    padding: 10%;
     background-color: rgba(255, 255, 255,.7)!important;
     /* margin: 30px; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+ align-items: center; */
   border-radius: 10px;
   
 }
@@ -54,4 +85,22 @@ a{
 float: left;
 margin:10px;
 
+}
+#view1{
+    display:block;
+}
+#view2{
+    display:none;
+}
+svg{
+    width:2%;
+    height:2%;
+}
+.centerTabel{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: 20%;
+margin-right: 20%;
 }
