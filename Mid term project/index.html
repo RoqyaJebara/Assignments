@@ -10,19 +10,25 @@
 
   </head>
   <body>
-   
-    <div class="page1"id="form">
-      <h1>Add User Tab  <br>   <a href="#tabel">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
-          <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5m2.45 0A3.5 3.5 0 0 1 8 3.5 3.5 3.5 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7"/>
-        </svg>
-        switch page
-      </a></h1>
-      <section >
-      
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
         
+        <button class="nav-link active" id="nav-form-tab" data-bs-toggle="tab" data-bs-target="#form" type="button" role="tab" aria-controls="nav-form" onclick="formTrue()" aria-selected="false">Add User</button>
+        <button class="nav-link " id="nav-table-tab" data-bs-toggle="tab" data-bs-target="#table" type="button" role="tab" aria-controls="nav-table" onclick="tableTrue()" aria-selected="true">Users</button>
+
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active page1" id="form" role="tabpanel" aria-labelledby="nav-form-tab">
+        <h1>Add User</h1>
+      <section >
+           
       <div >
-        <form onsubmit="return successfulalert(), saveData(),reset()" >
+        <form  onsubmit="return successfulalert(), saveData(),reset()"  >
+          <!--
+          
+          //id="userForm" for not default and show first data-bs-target
+          //false no reload page -->
           <div class="main_form">
            <div>
                <label for="email">Email :</label>
@@ -69,72 +75,62 @@
                <label for="address ">Address :</label>
                <textarea name="address" id="address" required></textarea>
              </div>
-           <button type="submit" class="btn btn-primary"> save</button>   
+           <button type="submit" class="btn btn-primary" > save</button>   
         
            </div>
        
          </form>
       </div>
-      </section>
-    </div>
-   <div class="page2" id="tabel">
-    <h1>Users Tab    <br> <a href="#form">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
-        <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5m2.45 0A3.5 3.5 0 0 1 8 3.5 3.5 3.5 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7"/>
-      </svg>
-      switch page</a></h1>
-  <a href="#view2">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
-      <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5m2.45 0A3.5 3.5 0 0 1 8 3.5 3.5 3.5 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7"/>
-    </svg>switch view
-   
-  </a> 
-    <section id="view1">
-    
-   <div >
-    <table class="table" >
-      <thead>
-          <tr>
-              <th scope="col">email</th>
-              <th scope="col">name</th>
-              <th scope="col">PhoneNumber</th>
-              <th scope="col">gender</th>
-              <th scope="col">address</th>
-          </tr>
-      </thead>
-      <tbody id="tableBody">
+      </section></div>
 
-      </tbody>
-  </table>
-   </div>
-   </div>
-  </section>
-
-  <div class="page3" id="view2">
-    <h1>Users Tab    <br> <a href="#form">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
-        <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5m2.45 0A3.5 3.5 0 0 1 8 3.5 3.5 3.5 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7"/>
-      </svg>
-      switch page</a></h1>
+      <div class="tab-pane fade page2" id="table" role="tabpanel" aria-labelledby="nav-table-tab"> 
  
-    <section >
-      <div>
-        <a href="#tabel">
+      <section id="view1">
+        <h1>Users     <a href="#" onclick="viewCards()">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
             <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5m2.45 0A3.5 3.5 0 0 1 8 3.5 3.5 3.5 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7"/>
-          </svg>switch view
+          </svg>
          
-        </a> 
-        <section id="view2">
-       
-          <div id="card">
-      
-          </div>
-        </section>
-       </div>
-  </section>
+        </a> </h1>
+    
+     <div class="centerTabel">
+      <table id="tableBody" class="table" >
+        <thead class="thead-dark">
+            <tr >
+                <th>email</th>
+                <th >name</th>
+                <th >PhoneNumber</th>
+                <th>gender</th>
+                <th >address</th>
+            </tr>
+        </thead>
+        <tbody >
   
- 
+        </tbody>
+    </table>
+     </div>
+    </section>
+
+     <div class="page3" id="view2">
+   
+      <h1>Users  <a href="#"onclick="viewTable()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-toggles" viewBox="0 0 16 16">
+          <path d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5m2.45 0A3.5 3.5 0 0 1 8 3.5 3.5 3.5 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7"/>
+        </svg>
+       
+      </a> </h1>
+     
+          <section>
+           
+            <div id="card">
+        
+            </div>
+          </section>
+        
+   
+    </div>
+   
+  
   </body>
    
 </html>
