@@ -14,7 +14,7 @@
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
         
         <button class="nav-link active" id="nav-form-tab" data-bs-toggle="tab" data-bs-target="#form" type="button" role="tab" aria-controls="nav-form" onclick="formTrue()" aria-selected="false">Add User</button>
-        <button class="nav-link " id="nav-table-tab" data-bs-toggle="tab" data-bs-target="#table" type="button" role="tab" aria-controls="nav-table" onclick="tableTrue()" aria-selected="true">Users</button>
+        <button class="nav-link " id="nav-table-tab" data-bs-toggle="tab" data-bs-target="#table" type="button" role="tab" aria-controls="nav-table" onclick="tableTrue(), filldata()" aria-selected="true">Users</button>
 
       </div>
     </nav>
@@ -24,7 +24,7 @@
       <section >
            
       <div >
-        <form  onsubmit="return successfulalert(), saveData(),reset()"  >
+        <form  onsubmit="return  saveData() ,reset();"  >
           <!--
           
           //id="userForm" for not default and show first data-bs-target
