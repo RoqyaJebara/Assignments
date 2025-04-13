@@ -15,9 +15,7 @@ class person {
 let persons = [];
 console.log(persons);
 
-function reset() {
-  document.getElementById("form").reset();
-}
+
 window.onload=function(){
   let nav_form=document.getElementById("nav-form-tab");
   let nav_table=document.getElementById("nav-table-tab"); 
@@ -98,7 +96,7 @@ window.saveData=function(){
 
     alert("in save data");
     successfulalert();
-    
+    reset();
     return false;
 }
 
@@ -118,6 +116,13 @@ window.tableTrue= function (){
   nav_form.setAttribute("aria-selected","false");
   nav_form.setAttribute("class","nav-link ");
   form.setAttribute("class","tab-pane fade page1");
+}
+window.reset=function(){
+  document.getElementById("email").value="";
+  document.getElementById("name").value="";
+  document.getElementById("PhoneNumber").value="";
+  document.getElementById("gender").value="male";
+  document.getElementById("address").value="";
 }
 }
 function viewTable(){

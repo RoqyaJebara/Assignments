@@ -16,7 +16,6 @@ nav{
     height: 6vh;
 }
 button{
-    /* border-radius: 6px !important; */
 }
 .page1,#view1,#view2{
     height:86vh;
@@ -58,15 +57,10 @@ section{
     align-items: center;
     
  }
-/* for center form  */
 form ,table{
     padding: 10%;
     background-color: rgba(255, 255, 255,.7)!important;
-    /* margin: 30px; */
-    /* display: flex;
-    flex-direction: column;
-  justify-content: center; 
- align-items: center; */
+
   border-radius: 10px;
   
 }
