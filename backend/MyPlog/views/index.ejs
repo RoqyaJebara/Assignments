@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+
+  <a href="/create" class="btn btn-primary m-5" role="button">Create</a>
+  <% if (locals.data) { data.forEach((element) => {%> 
+  <div class="card m-5 mt-0">
+    <div class="card-header justify-content-between d-flex">
+      
+      <h5>
+      
+          <%=element.title%>
+      </h5>
+      <div>
+        <div><%=element.author%></div>
+       
+      </div>
+    </div>
+    <div class="card-body">
+      <p class="card-text"><%=element.content%></p>
+     
+    </div>
+    <div class="card-footer text-body-secondary justify-content-between d-flex">
+      <div><%=element.date%></div>
+    <div> <a href="/edit/ <%=element.id%>" class="btn btn-primary">Edit </a>
+      <a href="/delete/<%=element.id%>" class="btn btn-primary">Delete</a></div>
+    </div>
+  </div>
+  <% }) }else{%> No Data <% } %>
+
+<%- include("partials/footer.ejs") %>

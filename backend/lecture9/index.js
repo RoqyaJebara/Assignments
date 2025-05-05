@@ -1,6 +1,12 @@
 //npm init
+
 //type =module
 //npm install express body-parser ejs
+// or
+//type =module
+//copy dependencies from package.json
+//npm install
+
 // nodemon index.js
 
 
