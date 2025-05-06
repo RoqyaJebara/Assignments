@@ -1,0 +1,46 @@
+<%- include("partials/header.ejs") %>
+
+<h1 class="m-5">Create</h1>
+<form action="/save" method="post">
+<div class="card m-5 mt-0">
+  <div class="card-header justify-content-start gap-3 d-flex">
+    <input
+      class="form-control"
+      type="text"
+      name="title"
+      id="title"
+      placeholder="Your Post Title "
+      required
+    />
+  </div>
+  <div class="card-body">
+    <p class="card-text">
+      <textarea
+        name="content"
+        id="content"
+        class="form-control"
+        rows="10"
+        placeholder="Your Post Content"
+        required
+      ></textarea>
+    </p>
+  </div>
+  <div class="card-footer text-body-secondary d-flex justify-content-between">
+  
+    <div>
+      <input
+      class="form-control"
+      type="text"
+      name="author"
+      id="author"      
+      placeholder="Author"
+      required
+    />
+    </div>
+    <div> <button type="submit" class="btn btn-primary">Save</button> </a></div>
+    <!-- //no a for not duplicite -->
+
+  </div>
+</div>
+</form>
+<%- include("partials/footer.ejs") %>
