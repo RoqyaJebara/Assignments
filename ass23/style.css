@@ -1,0 +1,15 @@
+.flex{
+    display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 10px;
+min-height: 90vh;
+border: 1px solid black;
+padding: 8px;
+flex-wrap: wrap;
+}
+.item{
+    border: 1px solid black;
+    padding: 8px;
+    flex-basis: 300px;
+}

@@ -1,0 +1,29 @@
+div{
+    display: flex; 
+    flex-direction: raw;
+    gap: 12px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+img{
+    width: 200px;
+}
+/* responsive 
+position
+grid
+all page flex for responsive
+default flex raw
+flex raw col
+*/
+
+/* display: flex; 
+flex-direction: raw;
+gap: 12px; col raw
+end lockalization
+   justify-content: space-around;
+   ri le item
+   justify-content: space-between;
+   start            end
+
+*/

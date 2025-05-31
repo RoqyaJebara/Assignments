@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script>
+          const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth() + 1).padStart(2, '0'); // Add 1 because months are 0-indexed
+  const day = String(now.getDate()).padStart(2, '0');
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+
+  const currentDateTime = `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`;
+
+  document.getElementById('datetime').setAttribute('max', currentDateTime);
+    </script> -->
+  </head>
+  <body>
+    <form>
+      <label for="firstName">First Name</label>
+      <br />
+      <input
+        type="text"
+        maxlength="16"
+        required
+        name="FirstName"
+        id="firstName"
+      />
+      <br /><br />
+
+      <label for="secondName">Second Name</label>
+      <br />
+      <input type="text" maxlength="16" name="SecondName" id="secondName" />
+      <br /><br />
+
+      <label for="thirdName">Third Name</label>
+      <br />
+      <input
+        type="text"
+        maxlength="16"
+        required
+        name="ThirdName"
+        id="thirdName"
+      />
+      <br /><br />
+
+      <label for="age">Age</label>
+      <br />
+      <input
+        type="number"        
+        name="Age"
+        id="age"
+      />
+      <br /><br />
+
+      <label for="birthday">Birthday</label>
+      <br />
+      <input
+        type="date"        
+        name="Birthday"
+        id="date"
+        max="2025-01-03"
+        
+      />
+      <br /><br />
+      <label for="email">Email</label>
+      <br />
+      <input
+        type="email"        
+        name="Email"
+        id="email"
+      />
+      <br /><br />
+      <label for="password">Password</label>
+      <br />
+      <input
+        type="password"        
+        name="Password"
+        id="password"
+      />
+      <br /><br />
+      <input type="submit" value="Create User" />
+    </form>
+  </body>
+</html>
